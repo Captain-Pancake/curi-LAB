@@ -1,6 +1,42 @@
-tageskunde{
-  margin: 10px;
-  border-radius:4 px;
-  border-style: solid;
-  border: 1px;
+
+label{
+  font-size: 40px;
+  font-family: Open Sans;
+  font-weight: bold;
+}
+
+img{
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.dashboard{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.middle{
+  margin-top: 200px;
+  grid-column: 2;
+}
+
+
+label{
+  font-size: 40px;
+  font-face: Open Sans;
+  font-weight: bold;
+  margin: auto;
+}
+.tour{
+  color:#D4CC2D;
+}
+
+.patientenkartei{
+  color:#FFFFFF
+}
+
+
+.messenger{
+  color:#FFFFFF
+
 }

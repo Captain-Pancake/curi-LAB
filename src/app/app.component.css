@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
 
 .main{
   display:grid;
-  grid-template-columns: 5% auto;
+  grid-template-rows: 5% auto;
+  font-face:Source Sans Pro;
+  font-size:24px;
+  background-color: #78B0C1;
 }
 
 .navigation{}
