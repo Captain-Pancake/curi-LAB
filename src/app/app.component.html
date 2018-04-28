@@ -1,21 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-
-  <ul >
-    <li *ngFor="let pflegekunde of tageskunden">
-    <div class="tageskunde">
-<div><span>
-  <label>Nummer:
-        <input [(ngModel)]="pflegekunde.id" placeholder="nummer">
-      </label></span></div>
-<div class="i2"><span>
-  <label>Name:
-      <input [(ngModel)]="pflegekunde.vorname" placeholder="vorname">
-      <input [(ngModel)]="pflegekunde.name" placeholder="name">
-    </label>
-  </span>
-</div>
-</div>
-</li>
-</ul>
-     <button class="sent">los</button>
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/tagesplan">Tagesplan</a>
+</nav>
+<router-outlet></router-outlet>
