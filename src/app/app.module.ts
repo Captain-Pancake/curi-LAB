@@ -7,6 +7,8 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { TagesplanComponent }  from './tagesplan/tagesplan.component';
 import {PflegekundeComponent} from './pflegekunde/pflegekunde.component';
 import { AppRoutingModule }     from './app-routing.module';
+import { DataService} from './services/aws.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { AppRoutingModule }     from './app-routing.module';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 
