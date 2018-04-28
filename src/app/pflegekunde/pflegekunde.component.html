@@ -1,7 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  kundendetails
 
-</div>
-
-     <button class="sent">update</button>
+  <div *ngIf="pflegekunde">
+    <h2>{{ pflegekunde.name | uppercase }} Details</h2>
+    <div><span>id: </span>{{pflegekunde.id}}</div>
+    <div><label>name:
+      <input [(ngModel)]="pflegekunde.vorname" placeholder="Vorname"/>
+    </label>
+  </div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="pflegekunde.name" placeholder="Name"/>
+      </label>
+    </div>
+    <div>
+      <label>Adresse:
+        <input [(ngModel)]="pflegekunde.addresse" placeholder="Adresse"/>
+      </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+  </div>
