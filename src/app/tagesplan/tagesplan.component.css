@@ -1,0 +1,18 @@
+.tageskunde{
+  margin: 10px;
+  border-radius:4 px;
+  border-style: solid;
+  border: 1px;
+  background-color: pink;
+}
+.pflegekundeimg{
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 150px;
+  max-height: 150px;
+  background-color: blue;
+
+}
+ul{
+list-style-type: none;
+}

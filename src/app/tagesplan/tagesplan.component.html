@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+  <ul >
+    <li *ngFor="let pflegekunde of tageskunden">
+    <div class="tageskunde">
+
+<div class="i2">
+  <span>
+  <div class="pflegekundeimg">
+  <img />
+</div>
+
+  <label>Name:
+      <input [(ngModel)]="pflegekunde.vorname" placeholder="vorname">
+      <input [(ngModel)]="pflegekunde.name" placeholder="name">
+    </label>
+  </span>
+</div>
+</div>
+</li>
+</ul>
+     <button class="sent">los</button>
