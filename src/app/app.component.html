@@ -1,27 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
 
-</div>
-<h2>Kunde </h2>
-<div class="i2"><span>
+  <ul >
+    <li *ngFor="let pflegekunde of tageskunden">
+    <div class="tageskunde">
+<div><span>
   <label>Nummer:
         <input [(ngModel)]="pflegekunde.id" placeholder="nummer">
       </label></span></div>
 <div class="i2"><span>
   <label>Name:
+      <input [(ngModel)]="pflegekunde.vorname" placeholder="vorname">
       <input [(ngModel)]="pflegekunde.name" placeholder="name">
     </label>
   </span>
 </div>
-      <div class="i2">
-        <span>
-        <label>Vorname:
-            <input [(ngModel)]="pflegekunde.vorname" placeholder="vorname">
-            </label>
-          </span></div>
-<div class="i2"> <span> <label>Pflegegrad:
-        <input [(ngModel)]="pflegekunde.pflegegrad" placeholder="grad">
-      </label></span></div>
+</div>
+</li>
+</ul>
+     <button class="sent">los</button>

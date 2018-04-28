@@ -21,13 +21,6 @@ export class FileeService {
     }
 
 
-
-    // send a POST request to the API to create a new data object
-    createFood(food) {
-        let body = JSON.stringify(food);
-        return this.http.post('/api/food/', body, httpOptions);
-    }
-
     // send a PUT request to the API to update a data object
     updateFood(food) {
         let body = JSON.stringify(food);
