@@ -1,6 +1,12 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/tagesplan">Tagesplan</a>
-</nav>
-<router-outlet></router-outlet>
+<div class='main'>
+  <div class='navigation'>
+    <nav>
+      <a routerLink="/dashboard">Dashboard</a>
+      <br>
+      <a routerLink="/tagesplan">Tagesplan</a>
+    </nav>
+  </div>
+  <div class="routing-panel">
+
+    <router-outlet></router-outlet>
+  </div>

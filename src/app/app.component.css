@@ -1,6 +1,9 @@
-tageskunde{
-  margin: 10px;
-  border-radius:4 px;
-  border-style: solid;
-  border: 1px;
+
+.main{
+  display:grid;
+  grid-template-columns: 5% auto;
 }
+
+.navigation{}
+
+.routing-panel{}

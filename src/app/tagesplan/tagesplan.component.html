@@ -1,23 +1,49 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
 
-  <ul >
-    <li *ngFor="let pflegekunde of tageskunden">
-    <div class="tageskunde">
+  <ul>
+    <li *ngFor="let pflegekunde of tageskunden" (click)="onSelect(pflegekunde)" routerLink="/detail/{{pflegekunde.id}}">
+      <div class="tageskunde">
+        <div class="ruleer">
+          <b class="red-line"></b>
+          <div class="dotinline">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke="black" stroke-width="3" fill="red" />
+          </svg>
+        </div>
+        </div>
+        <div class='patientname'>
+          <div>
+            <label>{{pflegekunde.vorname}}
+                </label>
+            <label>{{pflegekunde.name}}
+                      </label>
+          </div>
+          <div>
+            <label>{{pflegekunde.adresse}}
+                              </label>
+          </div>
+          <div>
+            <label>{{pflegekunde.zeit}}
+                              </label>
+          </div>
+        </div>
+        <div class="clocktime">
 
-<div class="i2">
-  <span>
-  <div class="pflegekundeimg">
-  <img />
-</div>
+          <label>{{pflegekunde.dauer}} h
+                            </label>
 
-  <label>Name:
-      <input [(ngModel)]="pflegekunde.vorname" placeholder="vorname">
-      <input [(ngModel)]="pflegekunde.name" placeholder="name">
-    </label>
-  </span>
-</div>
-</div>
-</li>
-</ul>
-     <button class="sent">los</button>
+        </div>
+
+        <div class="locationimg">
+          <img />
+          <p>location image</p>
+
+        </div>
+
+
+
+
+      </div>
+    </li>
+  </ul>
+  <button class="sent">los</button>
