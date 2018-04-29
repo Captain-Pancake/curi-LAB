@@ -18,7 +18,7 @@ onSelect(kunde: Pflegekunde): void {
 pflegekunde1: Pflegekunde = {
     id: 1,
     name: 'Müller',
-    vorname:'Harald',
+    vorname:'Peter',
     zeit:'7:00',
     adresse:'Sonderweg 1',
     dauer:'1,5'
