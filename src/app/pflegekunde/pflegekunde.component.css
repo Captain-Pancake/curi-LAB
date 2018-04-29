@@ -9,6 +9,7 @@ tageskunde{
 }
 .maingrid{
 display: grid;
+background-color: #FFFFFF;
 }
 
 .overview{
