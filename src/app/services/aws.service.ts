@@ -4,10 +4,6 @@ import { Observable } from 'rxjs/Observable';
 import { Pflegekunde } from '../obj/pflegekunde';
 
 
-
-
-
-
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -35,9 +31,8 @@ export class DataService {
     return this.http.get(this.configUrl);
   }
 
-  getKunde(id) {
-    return this.pflegekunde1;
-  }
+  getKunde(id) : Pflegekunde{
+    return this.pflegekunde1; }
 
 
 

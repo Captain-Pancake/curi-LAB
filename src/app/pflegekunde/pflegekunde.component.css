@@ -4,3 +4,29 @@ tageskunde{
   border-style: solid;
   border: 1px;
 }
+.zeitlabel{
+   opacity: 0.6;
+}
+.maingrid{
+display: grid;
+
+}
+
+.overview{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 2fr 1fr 1fr;
+  padding-top:10px;
+}
+
+.todayLabel {
+  opacity: 0.5;
+}
+
+.yesterday{text-align: left;}
+
+.today{
+  text-align: left;
+}
+.commomInfo{
+  text-align: left;
+}

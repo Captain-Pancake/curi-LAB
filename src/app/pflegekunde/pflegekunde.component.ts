@@ -26,12 +26,13 @@ export class PflegekundeComponent {
    };
 
    getKunde(id) {
-     console.log('hy');
-    this.dataService.getKunde(id).subscribe(
-      data => { this.kunde = data[0]},
-       err => console.error(err),
-       () => console.log('done loading Kunde')
-    );
+  this.kunde  = this.dataService.getKunde(id);
+
+
+      //,
+  //     err => console.error(err),
+  //     () => console.log('done loading Kunde')
+  //  );
   }
 
 }

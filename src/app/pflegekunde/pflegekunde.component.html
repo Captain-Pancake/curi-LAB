@@ -1,23 +1,67 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-Kunde X
+
   <div *ngIf="kunde">
-    <h2>{{ pflegekunde.name | uppercase }} Details</h2>
-    <div><span>id: </span>{{pflegekunde.id}}</div>
-    <div><label>name:
-      <input [(ngModel)]="pflegekunde.vorname" placeholder="Vorname"/>
-    </label>
-  </div>
-    <div>
-      <label>name:
-        <input [(ngModel)]="pflegekunde.name" placeholder="Name"/>
-      </label>
-    </div>
-    <div>
-      <label>Adresse:
-        <input [(ngModel)]="pflegekunde.addresse" placeholder="Adresse"/>
-      </label>
-    </div>
+    <div class="maingrid">
+      <div class="overview">
+        <div class="rightouter"></div>
+        <div class="rightouter"></div>
+        <div class="patientname">
+          <div>
+            <label>{{kunde.vorname}}
+                </label>
+            <label>{{kunde.name}}
+                      </label>
+          </div>
+          <div>
+            <label>{{kunde.adresse}}
+                              </label>
+          </div>
+          <div class="zeitlabel">
+            <label>{{kunde.zeit}}
+                              </label>
+          </div>
+        </div>
+
+            <div class="reporticon">
+                    <img  src="../../assets/Icons/Gruppe 13@3x.png" alt="click here for report"/></div>
+            <div class="customericon">
+                    <img  src="../../assets/Icons/Gruppe 13@3x.png" alt=" customerimage"/></div>
 
 
+
+</div>
+<div class="yesterday">
+  <div class="todayLabel">
+    <label>Gestern</label>
+</div>
+<ul>
+  <li>Er hörte leise Schritte hinter sich.</li>
+  <li>   Das bedeutete nichts Gutes. </li>
+<li>Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, </li>
+</ul>
+</div>
+<div class="today">
+
+  <div class="todayLabel">
+    <label>Gestern</label>
+</div>
+  <input placeholder="Bitte Hier protokoll einsprechen">
+
+</div>
+<div class="commomInfo">
+  <div class="todayLabel">
+    <label>Allgemeine Patienteninformationen</label>
   </div>
+  <ul>
+    <li>Allergisch auf Erdnüsse</li>
+    <li>Nimmt Anti-Depressiva</li>
+  <li>Laktoseintolerant</li></ul>
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
