@@ -13,15 +13,19 @@ background-color: #FFFFFF;
 }
 
 .overview{
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 2fr 1fr 1fr;
+  display: block;
+  margin-left: 100px;
+  text-align: left;
+  /* grid-template-columns: 0.5fr 0.5fr 2fr 1fr 1fr; */
   padding-top:40px;
-  max-width: 800px;
+  padding-bottom:40px;
+}
+.overview, .yesterday, .today, .commomInfo{
+  border-bottom: 1px solid #D9E6F4;
 }
 
 .todayLabel {
   opacity: 0.5;
-  margin-left: 100px;
   margin-top: 30px;
 }
 
@@ -46,4 +50,16 @@ background-color: #FFFFFF;
   text-align: left;
   max-width: 800px;
 
+}
+.patientname, .customericon, .reporticon{
+  display: inline-block;
+  display: inline-block;
+}
+.reporticon{
+  position: absolute;
+  right: 180px;
+}
+.customericon{
+  position: absolute;
+  right: 30px;
 }

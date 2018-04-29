@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open Sans');
-
 .main{
   display:grid;
   grid-template-rows: 1fr auto;
@@ -10,11 +9,8 @@ min-height: 100%;
 }
 
 .navigation{
-    padding:50px;
-    background-color: #78B0C1;
     min-width: 100%;
     min-height: 100%;
-
 }
 
 .routing-panel{
@@ -24,13 +20,25 @@ min-height: 100%;
 }
 
 .logo{
+  margin-left: 20px;
  max-height: 50px;
 }
 
 .menubar{
-  display:grid;
-  grid-template-columns: 1fr auto 1fr;
-  justify-content: space-between;
+  padding: 20px;
+  display:block;
+  background-color: #78B0C1;
+}
+.main{
+  width: 100%;
+}
+.logo{
+  display: inline-block;
+}
+.logout{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
 }
 
 .logoutpanel{

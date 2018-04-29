@@ -1,6 +1,6 @@
 <div class="tagesplan" style="text-align:center">
 
-  <ul>
+  <ul class="tagesplanList">
     <li *ngFor="let pflegekunde of tageskunden" (click)="onSelect(pflegekunde)" routerLink="/detail/{{pflegekunde.id}}">
       <div class="tageskunde">
         <div class="ruleer">
