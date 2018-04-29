@@ -2,14 +2,19 @@
 
 .main{
   display:grid;
-  grid-template-rows: 5% auto;
+  grid-template-rows: 1fr auto;
   font-face:Source Sans Pro;
   font-size:24px;
-  background-color: #78B0C1;
+
 }
 
 .navigation{
-    margin:50px;
+    padding:50px;
+    background-color: #78B0C1;
+    min-width: 100%;
+
 }
 
-.routing-panel{}
+.routing-panel{
+  grid-row: 2;
+}

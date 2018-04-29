@@ -17,6 +17,7 @@ img{
 .dashboard{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+ background-color: #78B0C1;
 }
 
 .middle{
