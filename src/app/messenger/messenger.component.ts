@@ -5,7 +5,7 @@ import {ChatService} from '../services/chatbot.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { OnInit } from '@angular/core';
-import {Accesstoken}from '../services/accessToken';
+import {Accesstoken}from '../services/accesstoken';
 import { Observable } from 'rxjs/Observable';
 
 
