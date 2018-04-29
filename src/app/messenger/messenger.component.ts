@@ -20,7 +20,6 @@ export class MessengerComponent implements OnInit {
   access:Accesstoken={
     accessToken:'224234',
     expiration:'23234'
-
   };
 
 
