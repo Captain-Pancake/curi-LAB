@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TagesplanComponent } from './tagesplan/tagesplan.component';
 import {PflegekundeComponent} from './pflegekunde/pflegekunde.component';
 import {MessengerComponent} from './messenger/messenger.component';
+import { KarteiComponent} from './kartei/kartei.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DataService} from './services/aws.service';
 import { ChatService} from './services/chatbot.service';
@@ -17,7 +18,8 @@ import { ChatService} from './services/chatbot.service';
     DashboardComponent,
     TagesplanComponent,
     PflegekundeComponent,
-    MessengerComponent
+    MessengerComponent,
+    KarteiComponent
   ],
   imports: [
     BrowserModule,
