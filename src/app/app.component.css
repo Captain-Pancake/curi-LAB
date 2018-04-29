@@ -5,6 +5,7 @@
   grid-template-rows: 1fr auto;
   font-face:Source Sans Pro;
   font-size:24px;
+min-width: 1024px ;
 
 }
 
@@ -17,4 +18,5 @@
 
 .routing-panel{
   grid-row: 2;
+  min-width: 100%;
 }

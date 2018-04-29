@@ -9,7 +9,7 @@ import { ConfigService } from './config.service';
 
 export class ConfigComponent {
 
-  constructor(private configService: ConfigService {}
+  constructor(private configService: ConfigService) {}
 
 showConfig() {
   this.configService.getConfig()
