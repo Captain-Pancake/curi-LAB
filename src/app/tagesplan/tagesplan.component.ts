@@ -15,14 +15,14 @@ onSelect(kunde: Pflegekunde): void {
   this.selectedkunde = kunde;
 }
 
-  pflegekunde1: Pflegekunde = {
-      id: 1,
-      name: 'Müller',
-      vorname:'Harald',
-      zeit:'7:00',
-      adresse:'Sonderweg 1',
-      dauer:'1,5'
-    };
+pflegekunde1: Pflegekunde = {
+    id: 1,
+    name: 'Müller',
+    vorname:'Harald',
+    zeit:'7:00',
+    adresse:'Sonderweg 1',
+    dauer:'1,5'
+  };
 
     pflegekunde2: Pflegekunde = {
         id: 2,
@@ -30,7 +30,7 @@ onSelect(kunde: Pflegekunde): void {
         vorname:'Sabine',
         zeit:'10:00',
         adresse:'Volksstr.23',
-            dauer:'3,5'
+          dauer:'3,5'
       };
 
       pflegekunde3: Pflegekunde = {

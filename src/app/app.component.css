@@ -8,6 +8,8 @@
   background-color: #78B0C1;
 }
 
-.navigation{}
+.navigation{
+    margin:50px;
+}
 
 .routing-panel{}

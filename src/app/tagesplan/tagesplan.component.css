@@ -16,7 +16,10 @@
 ul{
 list-style-type: none;
 }
-
+.tagesplan{
+  padding-left: 50px;
+  padding-top: 50px;
+}
 .zeitlabel{
 
    opacity: 0.6;

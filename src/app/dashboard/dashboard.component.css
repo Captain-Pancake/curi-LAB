@@ -5,6 +5,10 @@ label{
   font-weight: bold;
 }
 
+label:visited {
+      color:#D4CC2D;
+}
+
 img{
   min-width: 60px;
   min-height: 60px;
@@ -26,17 +30,20 @@ label{
   font-face: Open Sans;
   font-weight: bold;
   margin: auto;
+  color:#FFFFFF
 }
+
 .tour{
-  color:#D4CC2D;
+
 }
 
 .patientenkartei{
-  color:#FFFFFF
+
 }
 
 
 .messenger{
-  color:#FFFFFF
+
+
 
 }
