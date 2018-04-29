@@ -11,10 +11,11 @@ export class ConfigComponent {
 
   constructor(private configService: ConfigService) {}
 
-showConfig() {
-  this.configService.getConfig()
-    .subscribe(data => this.config = {
-        kundenUrl: data['kundenUrl'],
-        textfile:  data['textfile']
-    });
+  showConfig() {
+    this.configService.getConfig()
+      .subscribe(data => this.config = {
+          kundenUrl: data['kundenUrl'],
+          textfile:  data['textfile']
+      });
+  }
 }
