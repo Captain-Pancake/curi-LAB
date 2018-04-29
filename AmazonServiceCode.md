@@ -1,6 +1,6 @@
 # Amazon Service Codes Übersicht
 
-Alexa Skill -> Lampda1 -> Datenbank -> Lampda2 -> Website (Angular Project im Repository curi-LAB)
+Alexa Skill ->Amazon Lampda1 ->Amazon Dynamo Datenbank ->Amazon Lampda2 -> Amazon API Gateway -> Website (Angular Project im Repository curi-LAB)
 
 ##Code
 
