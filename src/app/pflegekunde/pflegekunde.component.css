@@ -30,3 +30,8 @@ display: grid;
 .commomInfo{
   text-align: left;
 }
+
+.protokoll{
+  min-width: 100px;
+  min-height: 100px;
+}

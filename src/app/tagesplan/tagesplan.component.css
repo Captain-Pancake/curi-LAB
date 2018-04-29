@@ -60,3 +60,7 @@ list-style-type: none;
   min-height: 30px;
   font-size: 30px;
 }
+.dummeLinie{
+  grid-column-start: 2;
+ grid-column-end: -1;
+}
