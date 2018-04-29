@@ -1,0 +1,82 @@
+<!--The content below is only a placeholder and can be replaced.-->
+ <script src="https://sdk.inbenta.io/chatbot/1/inbenta-chatbot-sdk.js"></script>
+<div style="text-align:center">
+
+  <div>
+<label>hier kommt die chatbot geschichte hin</label>
+<script>
+ var InbentaAuth = InbentaChatbotSDK.(<your_Domain_Key>,<your_API_Key>);
+ InbentaChatbotSDK.build(InbentaAuth);
+</script>
+
+
+<script>
+  var accessToken={
+    accessToken:<your_access_token> //Response form server-side Authorization
+  };
+  botConfig = {
+    environment: "development",
+    lang:'en',
+    answers:{
+      answerAttributes: ['ANSWER_TEXT'],
+      sideBubbleAttributes: ['SIDEBUBBLE_TEXT'],
+      maxRelatedContents: 3
+    },
+  };
+
+  var queryForPolarQuestion = 'baggage';
+  var queryForMultipleChoiceQuestion = 'special meals';
+  var queryForSimpleAnswer = 'vegan meals';
+
+  APIPromise = InbentaChatbotSDK.apiClient(accessToken,botConfig,"<?echo $key?>");
+  APIPromise.then((chatbotAPI)=> {
+    chatbotAPI.startConversation().then(function(response){
+      // set a variable
+      chatbotAPI.addVariable('acme_airlines_en/firstname', 'NewName', true);
+      // send a message
+      chatbotAPI.conversation(queryForSimpleAnswer).then(function(response){
+        console.log(response.data);
+        // get the last answer
+        var lastAnswer = response.data;
+        // if we have many answers choose only the last one
+        if(response.data.answers) {
+          lastAnswer = response.data.answers[response.data.answers.length-1];
+        }
+        // console.log(lastAnswer);
+        switch (lastAnswer.type) {
+          case "multipleChoiceQuestion":
+            console.log("multiple choice question received");
+            // choose one option randomly
+            var options = lastAnswer.options;
+            var choosedOption = options[Math.floor(Math.random() * options.length) % options.length];
+            console.log(choosedOption);
+            chatbotAPI.conversation(choosedOption.label, choosedOption.value).then(function(response){
+              console.log("'"+choosedOption.label+"' selected");
+              console.log(response.data);
+              // rate the content
+              if(response.data.parameters.contents.trackingCode) {
+                chatbotAPI.rateContent(response.data.parameters.contents.trackingCode.rateCode, 1);
+              }
+            });
+            break;
+          case "polarQuestion":
+            console.log("polar question received");
+            // choose yes
+            var choosedOption = "yes";
+            chatbotAPI.conversation(choosedOption, choosedOption).then(function(response){
+              console.log("'yes' selected");
+              console.log(response.data);
+            });
+            break;
+          case "answer":
+            console.log("simple answer received");
+            break;
+          default:
+            break;
+        }
+      });
+    });
+  });
+
+</script>
+  </div>
