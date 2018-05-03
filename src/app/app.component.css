@@ -1,46 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Open Sans');
-.main{
-  display:grid;
+.main {
+  display: grid;
   grid-template-rows: 1fr auto;
-  font-face:Source Sans Pro;
-  font-size:24px;
-min-width: 100% ;
-min-height: 100%;
+  font-face: Source Sans Pro;
+  font-size: 24px;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
-.navigation{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.routing-panel{
-  grid-row: 2;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.logo{
-  margin-left: 20px;
- max-height: 50px;
-}
-
-.menubar{
-  padding: 20px;
-  display:block;
+.navigation {
+  min-width: 100vw;
+  min-height: 14vh;
   background-color: #78B0C1;
 }
-.main{
+
+.routing-panel {
+  grid-row: 2;
+  min-width: 100vw;
+  min-height: 86vh;
+}
+
+.logo {
+  margin-left: 20px;
+  max-height: 50px;
+}
+
+.menubar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #78B0C1;
+}
+
+.main {
   width: 100%;
 }
-.logo{
+
+.logo {
   display: inline-block;
 }
-.logout{
-  display: inline-block;
-  position: absolute;
+
+.logout {
   right: 20px;
 }
 
-.logoutpanel{
-  text-align:right;
+.logoutpanel {
+  text-align: right;
 }
